@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday Rohya 💖</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,7 +14,7 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #ffb6c1, #dda0dd, #9370db);
+            background: linear-gradient(135deg, #ff6b9d, #c44569, #e84393, #fd79a8);
             color: #fff;
             overflow-x: hidden;
             min-height: 100vh;
@@ -29,15 +29,15 @@
         }
 
         .heart {
-            color: rgba(255, 105, 180, 0.7);
-            font-size: 20px;
+            color: rgba(255, 105, 180, 0.8);
+            font-size: 24px;
             animation: float 6s ease-in-out infinite;
         }
 
         .petal {
-            width: 15px;
-            height: 15px;
-            background: rgba(255, 182, 193, 0.7);
+            width: 18px;
+            height: 18px;
+            background: rgba(255, 182, 193, 0.8);
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
             animation: float 8s ease-in-out infinite;
         }
@@ -48,7 +48,7 @@
                 opacity: 0.7;
             }
             50% {
-                transform: translateY(-20px) rotate(10deg);
+                transform: translateY(-25px) rotate(15deg);
                 opacity: 1;
             }
         }
@@ -69,28 +69,35 @@
         h1, h2 {
             font-family: 'Dancing Script', cursive;
             text-align: center;
-            margin-bottom: 1.5rem;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            margin-bottom: 2rem;
+            text-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
         }
 
         h1 {
-            font-size: 5rem;
-            background: linear-gradient(45deg, #ff4d6d, #ff8fa3, #ffb3c6);
+            font-size: 5.5rem;
+            background: linear-gradient(45deg, #ffeb3b, #ff4081, #e91e63);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: glow 2s ease-in-out infinite alternate;
+            animation: glow 3s ease-in-out infinite alternate;
+            font-weight: 700;
         }
 
         h2 {
-            font-size: 3.5rem;
+            font-size: 4rem;
+            background: linear-gradient(45deg, #ffffff, #ffeaa7, #fd79a8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 600;
         }
 
         p {
-            font-size: 1.2rem;
-            line-height: 1.6;
+            font-size: 1.4rem;
+            line-height: 1.8;
             max-width: 800px;
             text-align: center;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
+            font-family: 'Playfair Display', serif;
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
         }
 
         /* Choice Section - This appears first */
@@ -99,14 +106,14 @@
         }
 
         .choice-container {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(15px);
-            border-radius: 25px;
-            padding: 4rem 3rem;
-            max-width: 700px;
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            padding: 5rem 4rem;
+            max-width: 750px;
             margin: 2rem auto;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
-            border: 2px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+            border: 3px solid rgba(255, 255, 255, 0.5);
             position: relative;
             overflow: hidden;
         }
@@ -118,9 +125,9 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.15), transparent);
             transform: rotate(45deg);
-            animation: shine 3s infinite;
+            animation: shine 4s infinite;
         }
 
         @keyframes shine {
@@ -130,33 +137,37 @@
 
         .choice-title {
             font-family: 'Dancing Script', cursive;
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
-            background: linear-gradient(45deg, #ff4d6d, #ff8fa3);
+            font-size: 4.5rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, #ffeb3b, #ff4081, #e91e63);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: glow 2s ease-in-out infinite alternate;
+            animation: glow 2.5s ease-in-out infinite alternate;
+            font-weight: 700;
         }
 
         @keyframes glow {
-            from { text-shadow: 0 0 10px #ff4d6d, 0 0 20px #ff4d6d; }
-            to { text-shadow: 0 0 15px #ff8fa3, 0 0 25px #ff8fa3; }
+            from { 
+                text-shadow: 0 0 15px #ff4081, 0 0 25px #ff4081, 0 0 35px #ff4081;
+            }
+            to { 
+                text-shadow: 0 0 20px #ffeb3b, 0 0 30px #ffeb3b, 0 0 40px #ffeb3b;
+            }
         }
 
         .choice-question {
-            font-size: 2.2rem;
-            margin-bottom: 3rem;
-            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 3.5rem;
+            font-family: 'Playfair Display', serif;
             font-weight: 500;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            text-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
             color: #fff;
         }
 
         .choice-buttons {
             display: flex;
             justify-content: center;
-            gap: 3rem;
+            gap: 4rem;
             flex-wrap: wrap;
         }
 
@@ -166,21 +177,22 @@
         }
 
         .subtitle {
-            font-size: 2.2rem;
-            margin-bottom: 2rem;
+            font-size: 2.8rem;
+            margin-bottom: 3rem;
             font-family: 'Dancing Script', cursive;
-            background: linear-gradient(45deg, #ff8fa3, #ffb3c6);
+            background: linear-gradient(45deg, #ffeaa7, #fd79a8, #e84393);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            font-weight: 600;
         }
 
         /* Photo Carousel */
         .carousel-container {
-            width: 80%;
-            max-width: 800px;
-            height: 400px;
-            perspective: 1000px;
-            margin: 2rem auto;
+            width: 85%;
+            max-width: 850px;
+            height: 450px;
+            perspective: 1200px;
+            margin: 3rem auto;
             position: relative;
         }
 
@@ -189,20 +201,20 @@
             height: 100%;
             position: relative;
             transform-style: preserve-3d;
-            animation: rotate 20s infinite linear;
+            animation: rotate 25s infinite linear;
         }
 
         .carousel-item {
             position: absolute;
-            width: 300px;
-            height: 300px;
-            top: 50px;
-            left: calc(50% - 150px);
-            border-radius: 15px;
+            width: 320px;
+            height: 320px;
+            top: 65px;
+            left: calc(50% - 160px);
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
             transition: transform 0.5s;
-            border: 3px solid rgba(255, 255, 255, 0.3);
+            border: 4px solid rgba(255, 255, 255, 0.4);
         }
 
         .carousel-item img {
@@ -222,20 +234,21 @@
 
         /* Buttons */
         button {
-            background: rgba(255, 255, 255, 0.2);
-            border: 2px solid rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.25);
+            border: 3px solid rgba(255, 255, 255, 0.6);
             color: white;
-            padding: 15px 35px;
-            border-radius: 50px;
-            font-size: 1.3rem;
+            padding: 18px 45px;
+            border-radius: 60px;
+            font-size: 1.5rem;
             cursor: pointer;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(5px);
-            margin: 10px;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
+            margin: 15px;
             font-family: 'Poppins', sans-serif;
-            font-weight: 500;
+            font-weight: 600;
             position: relative;
             overflow: hidden;
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
         }
 
         button::before {
@@ -245,8 +258,8 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-            transition: 0.5s;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+            transition: 0.6s;
         }
 
         button:hover::before {
@@ -254,27 +267,27 @@
         }
 
         button:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-5px);
-            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.35);
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.4);
         }
 
         .glow-button {
-            background: linear-gradient(45deg, #ff4d6d, #ff8fa3);
+            background: linear-gradient(45deg, #ff4081, #e91e63, #c2185b);
             border: none;
-            box-shadow: 0 0 25px #ff4d6d;
-            font-weight: 600;
+            box-shadow: 0 0 30px #ff4081;
+            font-weight: 700;
         }
 
         .glow-button:hover {
-            background: linear-gradient(45deg, #ff8fa3, #ff4d6d);
-            box-shadow: 0 0 35px #ff8fa3;
+            background: linear-gradient(45deg, #e91e63, #ff4081, #ad1457);
+            box-shadow: 0 0 45px #e91e63;
         }
 
         .no-button {
-            background: linear-gradient(45deg, #6d6d6d, #a3a3a3);
+            background: linear-gradient(45deg, #78909c, #546e7a);
             border: none;
-            box-shadow: 0 0 25px #6d6d6d;
+            box-shadow: 0 0 25px #546e7a;
             font-weight: 600;
             position: relative;
             overflow: hidden;
@@ -282,7 +295,7 @@
 
         .no-button:hover {
             transform: translate(var(--tx), var(--ty));
-            background: linear-gradient(45deg, #a3a3a3, #6d6d6d);
+            background: linear-gradient(45deg, #546e7a, #78909c);
         }
 
         /* Surprise Section */
@@ -292,14 +305,14 @@
 
         .slideshow-container {
             width: 100%;
-            max-width: 800px;
-            height: 500px;
+            max-width: 900px;
+            height: 550px;
             position: relative;
-            margin: 2rem auto;
+            margin: 3rem auto;
             overflow: hidden;
-            border-radius: 20px;
-            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
-            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+            box-shadow: 0 25px 55px rgba(0, 0, 0, 0.5);
+            border: 4px solid rgba(255, 255, 255, 0.4);
         }
 
         .slide {
@@ -307,7 +320,7 @@
             width: 100%;
             height: 100%;
             opacity: 0;
-            transition: opacity 1.5s ease-in-out;
+            transition: opacity 1.8s ease-in-out;
         }
 
         .slide.active {
@@ -322,40 +335,63 @@
 
         .caption {
             position: absolute;
-            bottom: 20px;
+            bottom: 25px;
             left: 0;
             width: 100%;
             text-align: center;
-            background: rgba(0, 0, 0, 0.6);
-            padding: 15px;
-            font-size: 1.4rem;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            font-size: 1.8rem;
             font-family: 'Dancing Script', cursive;
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(10px);
+            font-weight: 600;
         }
 
         .days-counter {
-            font-size: 1.8rem;
-            margin: 2rem 0;
+            font-size: 2.2rem;
+            margin: 3rem 0;
             text-align: center;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 15px 30px;
-            border-radius: 50px;
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.25);
+            padding: 20px 40px;
+            border-radius: 60px;
+            backdrop-filter: blur(15px);
+            border: 3px solid rgba(255, 255, 255, 0.4);
             font-family: 'Dancing Script', cursive;
+            font-weight: 600;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
         }
 
         /* Love Letter Section */
         #love-letter {
             display: none;
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(15px);
-            border-radius: 25px;
-            padding: 4rem;
-            max-width: 800px;
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            padding: 5rem 4rem;
+            max-width: 850px;
             margin: 2rem auto;
-            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
-            border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+            border: 3px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .love-letter-content {
+            font-size: 1.5rem;
+            line-height: 2;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .love-letter-content p {
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .signature {
+            text-align: right;
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            margin-top: 3rem;
+            color: #ffeaa7;
         }
 
         /* Message Section */
@@ -381,11 +417,11 @@
 
         .firework {
             position: absolute;
-            width: 5px;
-            height: 5px;
+            width: 6px;
+            height: 6px;
             border-radius: 50%;
-            box-shadow: 0 0 10px #fff;
-            animation: explode 1.5s forwards;
+            box-shadow: 0 0 15px #fff;
+            animation: explode 1.8s forwards;
         }
 
         @keyframes explode {
@@ -402,22 +438,22 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             h1 {
-                font-size: 3.5rem;
+                font-size: 4rem;
             }
             
             h2 {
-                font-size: 2.5rem;
+                font-size: 3rem;
             }
             
             .carousel-container {
                 width: 95%;
-                height: 300px;
+                height: 350px;
             }
             
             .carousel-item {
-                width: 200px;
-                height: 200px;
-                left: calc(50% - 100px);
+                width: 250px;
+                height: 250px;
+                left: calc(50% - 125px);
             }
             
             .slideshow-container {
@@ -425,30 +461,39 @@
             }
             
             #love-letter {
-                padding: 2.5rem;
+                padding: 3rem 2rem;
             }
             
             .choice-buttons {
                 flex-direction: column;
                 align-items: center;
-                gap: 1.5rem;
+                gap: 2rem;
             }
             
             .choice-title {
-                font-size: 3rem;
+                font-size: 3.5rem;
             }
             
             .choice-question {
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
             
             .choice-container {
-                padding: 3rem 2rem;
+                padding: 4rem 2.5rem;
             }
             
             button {
-                padding: 12px 25px;
-                font-size: 1.2rem;
+                padding: 15px 35px;
+                font-size: 1.3rem;
+            }
+            
+            .subtitle {
+                font-size: 2.2rem;
+            }
+            
+            .days-counter {
+                font-size: 1.8rem;
+                padding: 15px 30px;
             }
         }
     </style>
@@ -500,24 +545,45 @@
             <!-- Slides will be added by JavaScript -->
         </div>
         
-        <div class="days-counter" id="daysCounter"></div>
+        <div class="days-counter" id="daysCounter">2024 Days since we met 💖</div>
         
-        <button class="glow-button" id="voiceMessageButton">Play My Voice Message 🎤</button>
-        <audio id="voiceMessage">
-            <source src="https://assets.mixkit.co/sfx/preview/mixkit-happy-birthday-balloons-in-the-sky-3103.mp3" type="audio/mpeg">
-        </audio>
+        <button class="glow-button" id="viewLetterButton">View My Love Letter 💌</button>
     </section>
 
     <!-- Love Letter Section -->
     <section id="love-letter">
         <h2>My Love Letter</h2>
-        <p>
-            तू माझ्या आयुष्यात आलास आणि सगळं सुंदर झालं…<br>
-            तू माझं हसू, माझं शांत होणं आणि माझं जग आहेस ❤️<br><br>
+        <div class="love-letter-content">
+            <p>
+                My Dearest Rohya,<br><br>
+                
+                तू माझ्या आयुष्यात आलास आणि सगळं सुंदर झालं…<br>
+                तुझ्या हसण्याने माझं जग उजळलं, तुझ्या प्रेमाने माझं हृदय भरलं.<br><br>
+                
+                You came into my life and everything became beautiful...<br>
+                Your smile lights up my world, your love fills my heart.<br><br>
+                
+                Every moment with you is like a beautiful dream that I never want to end.<br>
+                Your presence in my life has given it new meaning, new colors, and endless happiness.<br><br>
+                
+                As your husband, I promise to stand by you always, to love you more with each passing day,<br>
+                and to make every moment of our life together as magical as you are.<br><br>
+                
+                You are not just my wife, you are my best friend, my confidante, my everything.<br>
+                Your love has transformed me into a better person, and I'm forever grateful for you.<br><br>
+                
+                On your special day, I want you to know that you are the most precious gift life has given me.<br>
+                May this year bring you all the happiness, success, and love that you truly deserve.<br><br>
+                
+                Happy Birthday to the most amazing woman in my life!<br>
+                You are my today and all of my tomorrows.<br><br>
+            </p>
             
-            You came into my life and everything became beautiful...<br>
-            You are my smile, my peace, and my world ❤️
-        </p>
+            <p class="signature">
+                Forever Yours,<br>
+                Your Loving Husband 💖
+            </p>
+        </div>
     </section>
 
     <!-- Ending Section -->
@@ -539,25 +605,25 @@
             const container = document.body;
             
             // Create hearts
-            for (let i = 0; i < 20; i++) {
+            for (let i = 0; i < 25; i++) {
                 const heart = document.createElement('div');
                 heart.classList.add('heart');
                 heart.innerHTML = '❤';
                 heart.style.left = Math.random() * 100 + 'vw';
                 heart.style.top = Math.random() * 100 + 'vh';
-                heart.style.animationDelay = Math.random() * 5 + 's';
-                heart.style.fontSize = (Math.random() * 10 + 15) + 'px';
+                heart.style.animationDelay = Math.random() * 6 + 's';
+                heart.style.fontSize = (Math.random() * 15 + 20) + 'px';
                 container.appendChild(heart);
             }
             
             // Create petals
-            for (let i = 0; i < 15; i++) {
+            for (let i = 0; i < 20; i++) {
                 const petal = document.createElement('div');
                 petal.classList.add('petal');
                 petal.style.left = Math.random() * 100 + 'vw';
                 petal.style.top = Math.random() * 100 + 'vh';
-                petal.style.animationDelay = Math.random() * 5 + 's';
-                petal.style.width = (Math.random() * 10 + 10) + 'px';
+                petal.style.animationDelay = Math.random() * 6 + 's';
+                petal.style.width = (Math.random() * 12 + 15) + 'px';
                 petal.style.height = petal.style.width;
                 container.appendChild(petal);
             }
@@ -580,14 +646,14 @@
                 
                 // Calculate rotation for 3D effect
                 const angle = (360 / images.length) * index;
-                item.style.transform = `rotateY(${angle}deg) translateZ(350px)`;
+                item.style.transform = `rotateY(${angle}deg) translateZ(400px)`;
                 
                 const img = document.createElement('img');
                 img.src = src;
                 img.alt = `Our beautiful memory ${index + 1}`;
                 img.onerror = function() {
                     // Fallback image if your image doesn't load
-                    this.src = 'https://via.placeholder.com/300x300/ffb6c1/ffffff?text=Our+Memory+' + (index + 1);
+                    this.src = 'https://via.placeholder.com/320x320/ff6b9d/ffffff?text=Our+Memory+' + (index + 1);
                 };
                 
                 item.appendChild(img);
@@ -599,10 +665,10 @@
         function initSlideshow() {
             const container = document.querySelector('.slideshow-container');
             const images = [
-                { src: 'assets/Rohya01.png', caption: 'My Love' },
-                { src: 'assets/Rohya02.png', caption: 'Our First Trip' },
-                { src: 'assets/Rohya03.png', caption: 'Beautiful Moments' },
-                { src: 'assets/Rohya04.png', caption: 'Together Forever' },
+                { src: 'assets/Rohya01.png', caption: 'My Beautiful Wife' },
+                { src: 'assets/Rohya02.png', caption: 'Our Special Moments' },
+                { src: 'assets/Rohya03.png', caption: 'Together Forever' },
+                { src: 'assets/Rohya04.png', caption: 'My Heartbeat' },
                 { src: 'assets/Rohya05.png', caption: 'My Everything' }
             ];
             
@@ -616,7 +682,7 @@
                 img.alt = item.caption;
                 img.onerror = function() {
                     // Fallback images if your images don't load
-                    this.src = 'https://via.placeholder.com/800x500/ffb6c1/ffffff?text=' + encodeURIComponent(item.caption);
+                    this.src = 'https://via.placeholder.com/900x550/ff6b9d/ffffff?text=' + encodeURIComponent(item.caption);
                 };
                 
                 const caption = document.createElement('div');
@@ -635,25 +701,15 @@
                 slides[currentSlide].classList.remove('active');
                 currentSlide = (currentSlide + 1) % slides.length;
                 slides[currentSlide].classList.add('active');
-            }, 4000);
-        }
-
-        // Calculate days since meeting
-        function calculateDaysTogether() {
-            // Set your meeting date here (format: YYYY-MM-DD)
-            const meetingDate = new Date('2020-01-01');
-            const today = new Date();
-            const diffTime = Math.abs(today - meetingDate);
-            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-            document.getElementById('daysCounter').textContent = `${diffDays} Days since we met 💖`;
+            }, 4500);
         }
 
         // Create fireworks
         function createFireworks() {
             const container = document.getElementById('fireworksContainer');
-            const colors = ['#ff4d6d', '#ff8fa3', '#ffb3c6', '#ffccd5', '#fff0f3'];
+            const colors = ['#ff4081', '#e91e63', '#c2185b', '#ffeb3b', '#ffeaa7', '#fd79a8'];
             
-            for (let i = 0; i < 50; i++) {
+            for (let i = 0; i < 60; i++) {
                 setTimeout(() => {
                     const firework = document.createElement('div');
                     firework.classList.add('firework');
@@ -667,11 +723,11 @@
                     // Random color
                     const color = colors[Math.floor(Math.random() * colors.length)];
                     firework.style.background = color;
-                    firework.style.boxShadow = `0 0 10px ${color}`;
+                    firework.style.boxShadow = `0 0 15px ${color}`;
                     
                     // Random explosion direction
-                    const tx = (Math.random() - 0.5) * 100;
-                    const ty = (Math.random() - 0.5) * 100;
+                    const tx = (Math.random() - 0.5) * 120;
+                    const ty = (Math.random() - 0.5) * 120;
                     firework.style.setProperty('--tx', `${tx}px`);
                     firework.style.setProperty('--ty', `${ty}px`);
                     
@@ -680,7 +736,7 @@
                     // Remove after animation
                     setTimeout(() => {
                         firework.remove();
-                    }, 1500);
+                    }, 1800);
                 }, i * 200);
             }
         }
@@ -702,8 +758,8 @@
             noButton.style.top = `${randomY}px`;
             
             // Set random movement for hover effect
-            noButton.style.setProperty('--tx', `${(Math.random() - 0.5) * 50}px`);
-            noButton.style.setProperty('--ty', `${(Math.random() - 0.5) * 50}px`);
+            noButton.style.setProperty('--tx', `${(Math.random() - 0.5) * 60}px`);
+            noButton.style.setProperty('--ty', `${(Math.random() - 0.5) * 60}px`);
         }
 
         // Event Listeners
@@ -712,12 +768,11 @@
             createFloatingElements();
             initCarousel();
             initSlideshow();
-            calculateDaysTogether();
             
             // Auto-play background music
             const backgroundMusic = new Audio('https://assets.mixkit.co/music/preview/mixkit-romantic-tender-moment-487.mp3');
             backgroundMusic.loop = true;
-            backgroundMusic.volume = 0.5;
+            backgroundMusic.volume = 0.4;
             backgroundMusic.play().catch(e => {
                 console.log('Auto-play prevented. User interaction required.');
             });
@@ -766,31 +821,19 @@
                 surpriseSection.style.display = 'flex';
             });
             
-            // Voice message button
-            const voiceMessageButton = document.getElementById('voiceMessageButton');
-            const voiceMessage = document.getElementById('voiceMessage');
+            // View love letter button
+            const viewLetterButton = document.getElementById('viewLetterButton');
             
-            voiceMessageButton.addEventListener('click', function() {
-                if (voiceMessage.paused) {
-                    voiceMessage.play();
-                    voiceMessageButton.textContent = 'Pause Voice Message ⏸️';
-                } else {
-                    voiceMessage.pause();
-                    voiceMessageButton.textContent = 'Play My Voice Message 🎤';
-                }
+            viewLetterButton.addEventListener('click', function() {
+                surpriseSection.style.display = 'none';
+                loveLetterSection.style.display = 'flex';
                 
-                // After voice message, show love letter
-                voiceMessage.onended = function() {
-                    surpriseSection.style.display = 'none';
-                    loveLetterSection.style.display = 'flex';
-                    
-                    // After love letter, show ending
-                    setTimeout(function() {
-                        loveLetterSection.style.display = 'none';
-                        endingSection.style.display = 'flex';
-                        createFireworks();
-                    }, 8000);
-                };
+                // After love letter, show ending
+                setTimeout(function() {
+                    loveLetterSection.style.display = 'none';
+                    endingSection.style.display = 'flex';
+                    createFireworks();
+                }, 12000);
             });
             
             // Replay button
@@ -815,7 +858,7 @@
                 if (navigator.share) {
                     navigator.share({
                         title: 'Happy Birthday Rohya',
-                        text: 'Check out this beautiful birthday surprise!',
+                        text: 'Check out this beautiful birthday surprise from your loving husband!',
                         url: window.location.href
                     });
                 } else {
