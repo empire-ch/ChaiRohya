@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday My Love 💖</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Happy Birthday Rohya 💖</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -67,18 +67,22 @@
         }
 
         h1, h2 {
-            font-family: 'Great Vibes', cursive;
+            font-family: 'Dancing Script', cursive;
             text-align: center;
             margin-bottom: 1.5rem;
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
 
         h1 {
-            font-size: 4rem;
+            font-size: 5rem;
+            background: linear-gradient(45deg, #ff4d6d, #ff8fa3, #ffb3c6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: glow 2s ease-in-out infinite alternate;
         }
 
         h2 {
-            font-size: 3rem;
+            font-size: 3.5rem;
         }
 
         p {
@@ -125,8 +129,8 @@
         }
 
         .choice-title {
-            font-family: 'Great Vibes', cursive;
-            font-size: 3.5rem;
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
             margin-bottom: 1rem;
             text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
             background: linear-gradient(45deg, #ff4d6d, #ff8fa3);
@@ -162,9 +166,12 @@
         }
 
         .subtitle {
-            font-size: 1.8rem;
+            font-size: 2.2rem;
             margin-bottom: 2rem;
-            font-family: 'Great Vibes', cursive;
+            font-family: 'Dancing Script', cursive;
+            background: linear-gradient(45deg, #ff8fa3, #ffb3c6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         /* Photo Carousel */
@@ -322,7 +329,7 @@
             background: rgba(0, 0, 0, 0.6);
             padding: 15px;
             font-size: 1.4rem;
-            font-family: 'Great Vibes', cursive;
+            font-family: 'Dancing Script', cursive;
             backdrop-filter: blur(5px);
         }
 
@@ -335,7 +342,7 @@
             border-radius: 50px;
             backdrop-filter: blur(10px);
             border: 2px solid rgba(255, 255, 255, 0.3);
-            font-family: 'Great Vibes', cursive;
+            font-family: 'Dancing Script', cursive;
         }
 
         /* Love Letter Section */
@@ -392,44 +399,14 @@
             }
         }
 
-        /* Music Player */
-        .music-player {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 100;
-        }
-
-        .music-toggle {
-            background: rgba(255, 255, 255, 0.2);
-            border: none;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.8rem;
-            cursor: pointer;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .music-toggle:hover {
-            transform: scale(1.1);
-            background: rgba(255, 255, 255, 0.3);
-        }
-
         /* Responsive Design */
         @media (max-width: 768px) {
             h1 {
-                font-size: 2.8rem;
+                font-size: 3.5rem;
             }
             
             h2 {
-                font-size: 2.2rem;
+                font-size: 2.5rem;
             }
             
             .carousel-container {
@@ -458,7 +435,7 @@
             }
             
             .choice-title {
-                font-size: 2.8rem;
+                font-size: 3rem;
             }
             
             .choice-question {
@@ -477,14 +454,6 @@
     </style>
 </head>
 <body>
-    <!-- Music Player -->
-    <div class="music-player">
-        <button class="music-toggle" id="musicToggle">🎵</button>
-        <audio id="backgroundMusic" loop>
-            <source src="https://assets.mixkit.co/music/preview/mixkit-romantic-tender-moment-487.mp3" type="audio/mpeg">
-        </audio>
-    </div>
-
     <!-- Choice Section - This appears first -->
     <section id="choice">
         <div class="choice-container">
@@ -500,7 +469,7 @@
 
     <!-- Welcome Section -->
     <section id="welcome">
-        <h1>A Small Gift for U 💕</h1>
+        <h1>Happy Birthday Rohya! 💕</h1>
         <p class="subtitle">Tumaree liyee chotaa surprise 💝</p>
         
         <div class="carousel-container">
@@ -517,7 +486,7 @@
         <h2>My Dearest Love</h2>
         <p>
             Heyyy, My Love ❤️<br>
-            I have something for you 🦋<br>
+            I have something special for you 🦋<br>
             Hehehe… and this one's only for YOU 💞
         </p>
         <button class="glow-button" id="revealButton">Idhar Click Karo ✨</button>
@@ -618,7 +587,7 @@
                 img.alt = `Our beautiful memory ${index + 1}`;
                 img.onerror = function() {
                     // Fallback image if your image doesn't load
-                    this.src = 'assets/Rohya05.png';
+                    this.src = 'https://via.placeholder.com/300x300/ffb6c1/ffffff?text=Our+Memory+' + (index + 1);
                 };
                 
                 item.appendChild(img);
@@ -647,14 +616,7 @@
                 img.alt = item.caption;
                 img.onerror = function() {
                     // Fallback images if your images don't load
-                    const fallbackImages = [
-                        'assets/Rohya01.png',
-                        'assets/Rohya02.png',
-                        'assets/Rohya03.png',
-                        'assets/Rohya04.png',
-                        'assets/Rohya05.png'
-                    ];
-                    this.src = fallbackImages[index];
+                    this.src = 'https://via.placeholder.com/800x500/ffb6c1/ffffff?text=' + encodeURIComponent(item.caption);
                 };
                 
                 const caption = document.createElement('div');
@@ -683,7 +645,7 @@
             const today = new Date();
             const diffTime = Math.abs(today - meetingDate);
             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-            document.getElementById('daysCounter').textContent = `${2024} Days since we met 💖`;
+            document.getElementById('daysCounter').textContent = `${diffDays} Days since we met 💖`;
         }
 
         // Create fireworks
@@ -752,18 +714,12 @@
             initSlideshow();
             calculateDaysTogether();
             
-            // Music toggle
-            const musicToggle = document.getElementById('musicToggle');
-            const backgroundMusic = document.getElementById('backgroundMusic');
-            
-            musicToggle.addEventListener('click', function() {
-                if (backgroundMusic.paused) {
-                    backgroundMusic.play();
-                    musicToggle.textContent = '🔊';
-                } else {
-                    backgroundMusic.pause();
-                    musicToggle.textContent = '🎵';
-                }
+            // Auto-play background music
+            const backgroundMusic = new Audio('https://assets.mixkit.co/music/preview/mixkit-romantic-tender-moment-487.mp3');
+            backgroundMusic.loop = true;
+            backgroundMusic.volume = 0.5;
+            backgroundMusic.play().catch(e => {
+                console.log('Auto-play prevented. User interaction required.');
             });
             
             // Section elements
@@ -780,6 +736,7 @@
             yesButton.addEventListener('click', function() {
                 choiceSection.style.display = 'none';
                 welcomeSection.style.display = 'flex';
+                backgroundMusic.play();
             });
             
             // No button - moves randomly
@@ -857,7 +814,7 @@
             shareButton.addEventListener('click', function() {
                 if (navigator.share) {
                     navigator.share({
-                        title: 'Happy Birthday My Love',
+                        title: 'Happy Birthday Rohya',
                         text: 'Check out this beautiful birthday surprise!',
                         url: window.location.href
                     });
