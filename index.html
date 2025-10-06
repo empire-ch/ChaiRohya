@@ -598,11 +598,11 @@
         function initCarousel() {
             const carousel = document.querySelector('.carousel');
             const images = [
-                'assets/Rohya01.jpg',
-                'assets/Rohya02.jpg',
-                'assets/Rohya03.jpg',
-                'assets/Rohya04.jpg',
-                'assets/Rohya05.jpg'
+                'assets/Rohya01.png',
+                'assets/Rohya02.png',
+                'assets/Rohya03.png',
+                'assets/Rohya04.png',
+                'assets/Rohya05.png'
             ];
             
             images.forEach((src, index) => {
@@ -618,7 +618,7 @@
                 img.alt = `Our beautiful memory ${index + 1}`;
                 img.onerror = function() {
                     // Fallback image if your image doesn't load
-                    this.src = 'assets/Rohya05.jpg';
+                    this.src = 'assets/Rohya05.png';
                 };
                 
                 item.appendChild(img);
@@ -630,11 +630,11 @@
         function initSlideshow() {
             const container = document.querySelector('.slideshow-container');
             const images = [
-                { src: 'assets/Rohya01.jpg', caption: 'My Love' },
-                { src: 'assets/Rohya02.jpg', caption: 'Our First Trip' },
-                { src: 'assets/Rohya03.jpg', caption: 'Beautiful Moments' },
-                { src: 'assets/Rohya04.jpg', caption: 'Together Forever' },
-                { src: 'assets/Rohya05.jpg', caption: 'My Everything' }
+                { src: 'assets/Rohya01.png', caption: 'My Love' },
+                { src: 'assets/Rohya02.png', caption: 'Our First Trip' },
+                { src: 'assets/Rohya03.png', caption: 'Beautiful Moments' },
+                { src: 'assets/Rohya04.png', caption: 'Together Forever' },
+                { src: 'assets/Rohya05.png', caption: 'My Everything' }
             ];
             
             images.forEach((item, index) => {
@@ -648,11 +648,11 @@
                 img.onerror = function() {
                     // Fallback images if your images don't load
                     const fallbackImages = [
-                        'assets/Rohya01.jpg',
-                        'assets/Rohya02.jpg',
-                        'assets/Rohya03.jpg',
-                        'assets/Rohya04.jpg',
-                        'assets/Rohya05.jpg'
+                        'assets/Rohya01.png',
+                        'assets/Rohya02.png',
+                        'assets/Rohya03.png',
+                        'assets/Rohya04.png',
+                        'assets/Rohya05.png'
                     ];
                     this.src = fallbackImages[index];
                 };
